@@ -1,5 +1,4 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { Footer, Sider, Header } from "./components";
 import { Wrapper } from "./styled";
 
 type PropsType = {
@@ -10,6 +9,7 @@ const AppLayout: React.FC<PropsType> = ({ children }) => {
   return (
     <Wrapper>
       <Header />
+      <Sider />
       {children}
       <Footer />
     </Wrapper>
