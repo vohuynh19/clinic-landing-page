@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 
-import { HomePage } from "@pages";
+import { ContactPage } from "@pages";
 
 export async function getStaticProps({ locale }: any) {
   return {
@@ -12,13 +12,13 @@ export async function getStaticProps({ locale }: any) {
   };
 }
 
-const Home: NextPage = () => {
+const Contact: NextPage = () => {
   return (
     <>
-      <NextSeo title="Home - The toothbar dental" />
-      <HomePage />
+      <NextSeo title="Contact - The toothbar dental" />
+      <ContactPage />
     </>
   );
 };
 
-export default Home;
+export default Contact;

@@ -1,27 +1,15 @@
 import { appWithTranslation } from "next-i18next";
 import { ThemeProvider } from "styled-components";
-import AOS from "aos";
 
 import { GlobalStyled, themes } from "../theme";
 import Head from "next/head";
 
-import "aos/dist/aos.css";
 import "swiper/css/bundle";
 import "antd/dist/antd.css";
 
 import type { AppProps } from "next/app";
-import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-      duration: 1000,
-    });
-  }, []);
-
   return (
     <>
       <Head>
@@ -45,6 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ThemeProvider theme={themes}>
         <GlobalStyled />
+
         <Component {...pageProps} />
       </ThemeProvider>
     </>
