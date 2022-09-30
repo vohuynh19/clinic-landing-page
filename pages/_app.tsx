@@ -8,6 +8,7 @@ import "swiper/css/bundle";
 import "antd/dist/antd.css";
 
 import type { AppProps } from "next/app";
+import { AppLayout } from "@layouts";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -27,14 +28,15 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"
         />
       </Head>
       <ThemeProvider theme={themes}>
         <GlobalStyled />
-
-        <Component {...pageProps} />
+        <AppLayout>
+          <Component {...pageProps} />
+        </AppLayout>
       </ThemeProvider>
     </>
   );

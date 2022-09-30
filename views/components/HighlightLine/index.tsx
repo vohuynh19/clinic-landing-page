@@ -1,5 +1,7 @@
+import { Wrapper } from "./styled";
+
 const HighlightLine = () => {
-  return <div>HighlightLine</div>;
+  return <Wrapper />;
 };
 
 export default HighlightLine;

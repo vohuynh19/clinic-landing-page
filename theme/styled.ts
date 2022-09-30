@@ -32,9 +32,9 @@ export default createGlobalStyle<GlobalStyleType>`
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Jura', 'Source Sans Pro', 'Proxima Nova', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.black};
 
   }
 `;
