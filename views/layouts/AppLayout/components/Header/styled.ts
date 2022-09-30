@@ -46,6 +46,7 @@ export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.white};
+  padding: 0 24px;
 `;
 
 export const Logo = styled.img`
