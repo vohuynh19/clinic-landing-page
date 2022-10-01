@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
-import { FC } from "react";
+import { FC, RefObject } from "react";
 import { IMAGES } from "src/constants/images";
+import { SiderHandle } from "../Sider";
 import {
   Container,
   LeftMenu,
@@ -12,7 +13,11 @@ import {
   Wrapper,
 } from "./styled";
 
-const Header = () => {
+type HeaderProps = {
+  siderRef: RefObject<SiderHandle>;
+};
+
+const Header: FC<HeaderProps> = ({ siderRef }) => {
   return (
     <Wrapper>
       <Container>
@@ -30,7 +35,7 @@ const Header = () => {
           <LinkItem title="Contact" activeKey="/contact" />
         </RightMenu>
 
-        <MobileMenu />
+        <MobileMenu onClick={() => siderRef.current?.open()} />
       </Container>
     </Wrapper>
   );
@@ -41,7 +46,7 @@ export type LinkItemProps = {
   activeKey: string;
 };
 
-const LinkItem: FC<LinkItemProps> = ({ title, activeKey }) => {
+export const LinkItem: FC<LinkItemProps> = ({ title, activeKey }) => {
   const router = useRouter();
 
   return (

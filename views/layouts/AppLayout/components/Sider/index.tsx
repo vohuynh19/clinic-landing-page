@@ -6,16 +6,17 @@ import {
   useRef,
   useState,
 } from "react";
+import { LinkItem } from "../Header";
 
-import { Overlay, Wrapper } from "./styled";
+import { Body, CloseButton, Head, Overlay, Wrapper } from "./styled";
 
-export type SliderHandle = {
+export type SiderHandle = {
   open: () => void;
   close: () => void;
 };
 
-const Sider: ForwardRefRenderFunction<SliderHandle, {}> = ({}, ref) => {
-  const [visibility, setVisibility] = useState(true);
+const Sider: ForwardRefRenderFunction<SiderHandle, {}> = ({}, ref) => {
+  const [visibility, setVisibility] = useState(false);
 
   const sliderRef = useRef<any>(null);
   const overLayRef = useRef<any>(null);
@@ -33,6 +34,9 @@ const Sider: ForwardRefRenderFunction<SliderHandle, {}> = ({}, ref) => {
 
   useEffect(() => {
     if (visibility) {
+      sliderRef?.current?.classList?.remove("slide-out");
+      overLayRef?.current?.classList?.remove("slide-out");
+
       sliderRef?.current?.classList?.add("slide-in");
       overLayRef?.current?.classList?.add("slide-in");
     } else {
@@ -49,7 +53,18 @@ const Sider: ForwardRefRenderFunction<SliderHandle, {}> = ({}, ref) => {
   return (
     <>
       <Overlay ref={overLayRef} onClick={() => setVisibility(false)} />
-      <Wrapper ref={sliderRef}>Sider</Wrapper>
+      <Wrapper ref={sliderRef}>
+        <Head>
+          <CloseButton onClick={() => setVisibility(false)} />
+        </Head>
+
+        <Body>
+          <LinkItem title="Home" activeKey="/" />
+          <LinkItem title="Services" activeKey="/services" />
+          <LinkItem title="About" activeKey="/about-us" />
+          <LinkItem title="Contact" activeKey="/contact" />
+        </Body>
+      </Wrapper>
     </>
   );
 };

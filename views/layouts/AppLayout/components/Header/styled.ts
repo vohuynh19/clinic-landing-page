@@ -54,7 +54,7 @@ export const RightMenu = styled.div`
 `;
 
 export const LogoWrapper = styled.div`
-  background-color: red;
+  background-color: ${({ theme }) => theme.colors.primary};
   position: relative;
   height: 144px;
   border-bottom-left-radius: 20px;
@@ -63,6 +63,11 @@ export const LogoWrapper = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.colors.white};
   padding: 0 24px;
+
+  @media (max-width: 568px) {
+    padding: 0;
+    height: 100px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -89,6 +94,10 @@ export const LinkItemWrapper = styled.a<LinkItemWrapperProps>`
     css`
       font-weight: 700;
     `}
+
+  @media (max-width: 1024px) {
+    padding: 8px 16px;
+  }
 `;
 
 export const MobileMenu = styled.div`
@@ -104,6 +113,11 @@ export const MobileMenu = styled.div`
     height: 4px;
     background-color: ${({ theme }) => theme.colors.white};
     bottom: -8px;
+    @media (max-width: 568px) {
+      width: 24px;
+      height: 3px;
+      bottom: -6px;
+    }
   }
 
   &::before {
@@ -113,5 +127,15 @@ export const MobileMenu = styled.div`
     height: 4px;
     background-color: ${({ theme }) => theme.colors.white};
     top: -8px;
+    @media (max-width: 568px) {
+      width: 24px;
+      height: 3px;
+      top: -6px;
+    }
+  }
+
+  @media (max-width: 568px) {
+    width: 24px;
+    height: 3px;
   }
 `;

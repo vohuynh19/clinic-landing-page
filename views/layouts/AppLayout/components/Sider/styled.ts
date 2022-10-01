@@ -11,13 +11,13 @@ export const Overlay = styled.div`
   z-index: 100;
 
   &.slide-in {
-    animation: custom-ease-in 300ms linear;
+    animation: custom-ease-in 300ms;
     visibility: visible;
     opacity: 1;
   }
 
   &.slide-out {
-    animation: custom-ease-out 300ms linear;
+    animation: custom-ease-out 300ms;
     visibility: hidden;
     opacity: 0;
   }
@@ -52,18 +52,18 @@ export const Wrapper = styled.aside`
   top: 0;
   bottom: 0;
   width: 300px;
-  background-color: red;
+  background-color: ${({ theme }) => theme.colors.primary};
   z-index: 100;
   transform: translateX(300px);
 
   &.slide-in {
     transform: translateX(0);
-    animation: slideIn 300ms linear;
+    animation: slideIn 300ms;
   }
 
   &.slide-out {
     transform: translateX(300);
-    animation: slideOut 300ms linear;
+    animation: slideOut 300ms;
   }
 
   @keyframes slideIn {
@@ -82,5 +82,40 @@ export const Wrapper = styled.aside`
     100% {
       transform: translateX(300px);
     }
+  }
+`;
+
+export const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+`;
+export const Head = styled.div`
+  height: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  padding: 0 16px;
+`;
+export const CloseButton = styled.div`
+  position: relative;
+  width: 16px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: ${({ theme }) => theme.colors.white};
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: ${({ theme }) => theme.colors.white};
   }
 `;
