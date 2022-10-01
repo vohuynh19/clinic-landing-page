@@ -1,5 +1,14 @@
+import { BookAppointmentSection, FooterContactSection } from "@components";
+import IntroSection from "./components/IntroSection";
+
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <>
+      <IntroSection />
+      <BookAppointmentSection />
+      <FooterContactSection />
+    </>
+  );
 };
 
 export default Services;

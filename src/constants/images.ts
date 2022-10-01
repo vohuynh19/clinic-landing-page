@@ -1,6 +1,10 @@
 export const IMAGES = {
   APP_HEADER_LOGO: "./images/common/horizontal-logo.png",
   HOME_BANNER: "./images/banner/home.jpeg",
+  SERVICES_BANNER: "./images/banner/services.jpeg",
+  ABOUT_BANNER: "./images/banner/about.jpeg",
+  CONTACT_BANNER: "./images/banner/contact.jpeg",
+
   HOME_ABOUT_US: "./images/home/about-header.jpeg",
 
   CAROUSEL_CONSULTATION_ROOM: "./images/carousel/consultation-room.jpeg",

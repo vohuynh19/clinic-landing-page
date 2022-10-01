@@ -1,5 +1,13 @@
+import { FooterContactSection } from "@components";
+import IntroSection from "./components/IntroSection";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <>
+      <IntroSection />
+      <FooterContactSection />
+    </>
+  );
 };
 
 export default Contact;
