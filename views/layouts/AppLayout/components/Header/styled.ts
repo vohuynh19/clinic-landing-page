@@ -105,6 +105,11 @@ export const MobileMenu = styled.div`
   height: 4px;
   background-color: ${({ theme }) => theme.colors.white};
   position: relative;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 
   &::after {
     position: absolute;

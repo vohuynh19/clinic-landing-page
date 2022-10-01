@@ -1,12 +1,11 @@
-import { BannerImage } from "@components";
-import { IMAGES } from "src/constants/images";
-import { Wrapper } from "./styled";
+import { AboutUsSection, IntroSection } from "./components";
 
 const Home = () => {
   return (
-    <Wrapper>
-      <BannerImage src={IMAGES.HOME_BANNER} />
-    </Wrapper>
+    <>
+      <IntroSection />
+      <AboutUsSection />
+    </>
   );
 };
 
