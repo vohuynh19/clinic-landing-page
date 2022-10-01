@@ -38,7 +38,7 @@ export const Col = styled.div`
 export const FooterTitle = styled.div`
   margin-top: 16px;
   margin-bottom: 24px;
-  font-size: 28px;
+  font-size: 35px;
 
   @media (max-width: 968px) {
     margin-top: 8px;

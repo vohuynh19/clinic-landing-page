@@ -89,4 +89,8 @@ export const ItemDesc = styled.div`
   font-size: 16px;
   line-height: 21.94px;
 `;
-export const ItemSubDesc = styled.li``;
+export const ItemSubDesc = styled.li`
+  @media (max-width: 1024px) {
+    list-style-type: none;
+  }
+`;

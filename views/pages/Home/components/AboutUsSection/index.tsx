@@ -8,7 +8,7 @@ const AboutUsSection = () => {
       <BannerImage src={IMAGES.HOME_ABOUT_US} />
       <AboutUsInfo>
         <HighlightLine primary={true} />
-        <Title>A little about us</Title>
+        <Title className="highlightFont">A little about us</Title>
         <Desc>
           The Toothbar Dental aims to redefine your dental experience, breaking
           preconceived notions that going to the dentist is unpleasant. We want

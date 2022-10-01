@@ -19,7 +19,7 @@ const Footer = () => {
         <Container>
           <Col>
             <HighlightLine />
-            <FooterTitle>Come say hi!</FooterTitle>
+            <FooterTitle className="highlightFont">Come say hi!</FooterTitle>
             <FooterDesc>
               428 River Valley Road #01-07 Loft
               <br />@ Nathan, Singapore 248327
@@ -28,7 +28,7 @@ const Footer = () => {
 
           <Col>
             <HighlightLine />
-            <FooterTitle>Office hours</FooterTitle>
+            <FooterTitle className="highlightFont">Office hours</FooterTitle>
             <FooterDesc>
               Monday to Friday 9am - 6pm
               <br />
@@ -40,7 +40,7 @@ const Footer = () => {
 
           <Col>
             <HighlightLine />
-            <FooterTitle>Connect with us</FooterTitle>
+            <FooterTitle className="highlightFont">Connect with us</FooterTitle>
             <FooterSocialMedia>
               <MediaItem />
               <MediaItem />

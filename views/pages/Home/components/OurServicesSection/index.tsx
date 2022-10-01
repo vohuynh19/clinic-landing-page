@@ -19,7 +19,7 @@ const OurServicesSection = () => {
     <Wrapper>
       <Info>
         <HighlightLine primary />
-        <Title>Our services</Title>
+        <Title className="highlightFont">Our services</Title>
         <Desc>
           Think of us as a bar that tends to your teeth and dental needs. We
           provide top-notch dental care, equipped with the latest dental
@@ -92,8 +92,11 @@ const services = [
   },
   {
     icon: IMAGES.SERVICE_PAEDIATRIC_DENTISTRY,
-    title: "Your Child In Trustworthy Hands.",
-    desc: "First dental visit by 1st birthday.",
+    title: "Children Dentistry - The Toothbar Dental Junior Club",
+    descArr: [
+      "Your Child In Trustworthy Hands.",
+      "First dental visit by 1st birthday.",
+    ],
   },
 ];
 

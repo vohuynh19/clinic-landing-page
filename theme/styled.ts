@@ -35,6 +35,9 @@ export default createGlobalStyle<GlobalStyleType>`
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: ${({ theme }) => theme.colors.black};
+  }
 
+  .highlightFont{
+    font-family: 'Arapey', serif;
   }
 `;
