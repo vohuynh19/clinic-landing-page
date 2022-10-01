@@ -7,6 +7,7 @@ import {
   LinkItemWrapper,
   Logo,
   LogoWrapper,
+  MobileMenu,
   RightMenu,
   Wrapper,
 } from "./styled";
@@ -28,6 +29,8 @@ const Header = () => {
           <LinkItem title="About" activeKey="/about-us" />
           <LinkItem title="Contact" activeKey="/contact" />
         </RightMenu>
+
+        <MobileMenu />
       </Container>
     </Wrapper>
   );

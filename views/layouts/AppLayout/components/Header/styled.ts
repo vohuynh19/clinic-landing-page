@@ -23,18 +23,34 @@ export const Container = styled.div`
   display: flex;
   width: 960px;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+  }
+  @media (max-width: 576px) {
+    padding: 16px;
+  }
 `;
 export const LeftMenu = styled.div`
   width: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 export const RightMenu = styled.div`
   width: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const LogoWrapper = styled.div`
@@ -51,6 +67,9 @@ export const LogoWrapper = styled.div`
 
 export const Logo = styled.img`
   width: 300px;
+  @media (max-width: 576px) {
+    width: 220px;
+  }
 `;
 
 type LinkItemWrapperProps = {
@@ -70,4 +89,29 @@ export const LinkItemWrapper = styled.a<LinkItemWrapperProps>`
     css`
       font-weight: 700;
     `}
+`;
+
+export const MobileMenu = styled.div`
+  width: 32px;
+  height: 4px;
+  background-color: ${({ theme }) => theme.colors.white};
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 4px;
+    background-color: ${({ theme }) => theme.colors.white};
+    bottom: -8px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 4px;
+    background-color: ${({ theme }) => theme.colors.white};
+    top: -8px;
+  }
 `;

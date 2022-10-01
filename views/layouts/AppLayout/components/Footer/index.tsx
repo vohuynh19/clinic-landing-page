@@ -7,6 +7,7 @@ import {
   FooterSocialMedia,
   FooterTitle,
   MediaItem,
+  WaterMarkText,
   WaterMarkWrapper,
   Wrapper,
 } from "./styled";
@@ -54,8 +55,10 @@ const Footer = () => {
       </Wrapper>
 
       <WaterMarkWrapper>
-        © 2022 The Toothbar Dental Pte Ltd, All Rights Reserved | Designed by
-        <a>digitalts</a>
+        <WaterMarkText>
+          © 2022 The Toothbar Dental Pte Ltd, All Rights Reserved | Designed by
+          <a>digitalts</a>
+        </WaterMarkText>
       </WaterMarkWrapper>
     </>
   );
