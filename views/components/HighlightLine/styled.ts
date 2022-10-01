@@ -1,9 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { HighlightLineProps } from ".";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<HighlightLineProps>`
   width: 44.8px;
   height: 4px;
   border-width: 0px;
   color: ${({ theme }) => theme.colors.yellowBg};
   background-color: ${({ theme }) => theme.colors.yellowBg};
+
+  ${({ primary }) =>
+    primary &&
+    css`
+      color: ${({ theme }) => theme.colors.primary};
+      background-color: ${({ theme }) => theme.colors.primary};
+    `}
 `;

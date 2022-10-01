@@ -1,7 +1,11 @@
+import { FC } from "react";
 import { Wrapper } from "./styled";
 
-const HighlightLine = () => {
-  return <Wrapper />;
+export type HighlightLineProps = {
+  primary?: boolean;
+};
+const HighlightLine: FC<HighlightLineProps> = ({ primary }) => {
+  return <Wrapper primary={primary} />;
 };
 
 export default HighlightLine;
