@@ -18,7 +18,7 @@ const OurServicesSection = () => {
   return (
     <Wrapper>
       <Info>
-        <HighlightLine />
+        <HighlightLine primary />
         <Title>Our services</Title>
         <Desc>
           Think of us as a bar that tends to your teeth and dental needs. We

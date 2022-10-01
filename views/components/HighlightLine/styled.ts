@@ -11,6 +11,7 @@ export const Wrapper = styled.div<HighlightLineProps>`
   ${({ primary }) =>
     primary &&
     css`
+      width: 60px;
       color: ${({ theme }) => theme.colors.primary};
       background-color: ${({ theme }) => theme.colors.primary};
     `}
