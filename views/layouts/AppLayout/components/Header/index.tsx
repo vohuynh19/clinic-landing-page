@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC, RefObject } from "react";
 import { IMAGES } from "src/constants/images";
@@ -50,9 +51,14 @@ export const LinkItem: FC<LinkItemProps> = ({ title, activeKey }) => {
   const router = useRouter();
 
   return (
-    <LinkItemWrapper href={activeKey} isActive={activeKey === router.pathname}>
-      {title}
-    </LinkItemWrapper>
+    <Link href={activeKey}>
+      <LinkItemWrapper
+        href={activeKey}
+        isActive={activeKey === router.pathname}
+      >
+        {title}
+      </LinkItemWrapper>
+    </Link>
   );
 };
 

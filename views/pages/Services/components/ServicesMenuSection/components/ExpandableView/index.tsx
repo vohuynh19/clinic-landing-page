@@ -3,6 +3,7 @@ import { FC, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Button } from "@components";
 
 import { Container, Content, StatusIcon, Title, Wrapper } from "./styled";
+import { useRouter } from "next/router";
 
 type ExpandableViewProps = {
   children?: any;
@@ -12,10 +13,26 @@ type ExpandableViewProps = {
 };
 
 const ExpandableView: FC<ExpandableViewProps> = (props) => {
+  const router = useRouter();
+
   const [visibility, setVisibility] = useState(props.defaultOpen || false);
 
   const [height, setHeight] = useState(0);
   const contentRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (router.asPath.includes(props.idKey)) {
+      setVisibility(true);
+
+      const yOffset = -120;
+      const element = document.getElementById("key-" + props.idKey);
+      const y =
+        (element?.getBoundingClientRect()?.top || 0) +
+        window.pageYOffset +
+        yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }, [router]);
 
   useLayoutEffect(() => {
     if (height === 0) {
@@ -40,7 +57,7 @@ const ExpandableView: FC<ExpandableViewProps> = (props) => {
   }, [height, visibility]);
 
   return (
-    <Wrapper id={props.idKey}>
+    <Wrapper id={"key-" + props.idKey}>
       <Button onClick={() => setVisibility(!visibility)}>
         <Title className="highlightFont">{props.title}</Title>
         <StatusIcon visibility={visibility}>

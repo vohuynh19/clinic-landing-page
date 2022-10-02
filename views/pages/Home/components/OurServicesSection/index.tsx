@@ -1,4 +1,5 @@
 import { Button, HighlightLine } from "@components";
+import Link from "next/link";
 import { IMAGES } from "src/constants/images";
 import {
   Wrapper,
@@ -30,20 +31,22 @@ const OurServicesSection = () => {
       </Info>
 
       <Detail>
-        {services.map((item) => (
-          <ItemWrapper>
-            <ItemIcon src={item.icon} />
-            <ItemInfo>
-              <ItemTitle>{item.title}</ItemTitle>
-              <ItemDesc>
-                {item.desc
-                  ? item.desc
-                  : item.descArr?.map((subItem) => (
-                      <ItemSubDesc>{subItem}</ItemSubDesc>
-                    ))}
-              </ItemDesc>
-            </ItemInfo>
-          </ItemWrapper>
+        {services.map((item, index) => (
+          <Link href={`/services#services-${index + 1}`}>
+            <ItemWrapper>
+              <ItemIcon src={item.icon} />
+              <ItemInfo>
+                <ItemTitle>{item.title}</ItemTitle>
+                <ItemDesc>
+                  {item.desc
+                    ? item.desc
+                    : item.descArr?.map((subItem) => (
+                        <ItemSubDesc>{subItem}</ItemSubDesc>
+                      ))}
+                </ItemDesc>
+              </ItemInfo>
+            </ItemWrapper>
+          </Link>
         ))}
       </Detail>
     </Wrapper>
