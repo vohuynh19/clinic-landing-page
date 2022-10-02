@@ -13,12 +13,22 @@ export const Wrapper = styled.div`
     @media (max-width: 1400px) {
       padding: 20px 24px;
     }
+
+    @media (max-width: 768px) {
+      padding: 16px 20px;
+    }
   }
 `;
 
 export const Title = styled.div`
   font-size: 40px;
   line-height: 65.76px;
+  text-align: start;
+
+  @media (max-width: 767px) {
+    font-size: 26px;
+    line-height: 35px;
+  }
 `;
 
 type StatusIconProps = {
@@ -60,6 +70,9 @@ export const Content = styled.div<ContentProps>`
   @media (max-width: 1400px) {
     padding: 0 24px;
   }
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 
   overflow: hidden;
   height: 0;
@@ -86,4 +99,9 @@ export const Content = styled.div<ContentProps>`
 export const Container = styled.div`
   display: flex;
   padding: 20px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
