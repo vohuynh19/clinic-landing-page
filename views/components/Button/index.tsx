@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-const Button = ({ children }: any) => {
-  return <SButton className="btn">{children}</SButton>;
+const Button = ({ children, ...props }: any) => {
+  return (
+    <SButton {...props} className="btn">
+      {children}
+    </SButton>
+  );
 };
 
 const SButton = styled.button`
@@ -13,6 +17,11 @@ const SButton = styled.button`
   text-align: center;
   border-radius: 12px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.highlightPrimary};
+  }
 `;
 
 export default Button;
