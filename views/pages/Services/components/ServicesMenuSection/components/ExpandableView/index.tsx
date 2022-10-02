@@ -1,8 +1,8 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import { Button } from "@components";
 
-import { Content, StatusIcon, Title, Wrapper } from "./styled";
+import { Container, Content, StatusIcon, Title, Wrapper } from "./styled";
 
 type ExpandableViewProps = {
   children?: any;
@@ -14,6 +14,31 @@ type ExpandableViewProps = {
 const ExpandableView: FC<ExpandableViewProps> = (props) => {
   const [visibility, setVisibility] = useState(props.defaultOpen || false);
 
+  const [height, setHeight] = useState(0);
+  const contentRef = useRef<any>(null);
+
+  useLayoutEffect(() => {
+    if (height === 0) {
+      setHeight(contentRef.current.clientHeight);
+    }
+  }, [visibility]);
+
+  useEffect(() => {
+    if (height > 0) {
+      if (visibility) {
+        contentRef.current.classList.add("expand");
+        setTimeout(() => {
+          contentRef.current.classList.remove("expand");
+        }, 300);
+      } else {
+        contentRef.current.classList.add("collapse");
+        setTimeout(() => {
+          contentRef.current.classList.remove("collapse");
+        }, 300);
+      }
+    }
+  }, [height, visibility]);
+
   return (
     <Wrapper id={props.idKey}>
       <Button onClick={() => setVisibility(!visibility)}>
@@ -23,7 +48,9 @@ const ExpandableView: FC<ExpandableViewProps> = (props) => {
         </StatusIcon>
       </Button>
 
-      {visibility && <Content>{props.children}</Content>}
+      <Content height={height} ref={contentRef} visibility={visibility}>
+        <Container>{props.children}</Container>
+      </Content>
     </Wrapper>
   );
 };

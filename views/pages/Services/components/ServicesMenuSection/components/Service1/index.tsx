@@ -8,6 +8,7 @@ import {
   SecondSubCol,
 } from "../../styled";
 import ExpandableView from "../ExpandableView";
+import { Image1 } from "./styled";
 
 const Service1 = () => {
   return (
@@ -38,7 +39,7 @@ const Service1 = () => {
         </FirstSubCol>
 
         <SecondSubCol>
-          <img src={IMAGES.SERVICE_INFO_1} />
+          <Image1 src={IMAGES.SERVICE_INFO_1} />
         </SecondSubCol>
       </SecondCol>
     </ExpandableView>

@@ -12,12 +12,21 @@ export const Container = styled.div`
   padding: 20px;
 `;
 
-export const FirstCol = styled.div``;
+export const FirstCol = styled.div`
+  width: 20%;
+`;
 
-export const SecondCol = styled.div``;
+export const SecondCol = styled.div`
+  width: 80%;
+  display: flex;
+`;
 
-export const FirstSubCol = styled.div``;
+export const FirstSubCol = styled.div`
+  width: 51%;
+`;
 
-export const SecondSubCol = styled.div``;
+export const SecondSubCol = styled.div`
+  width: 49%;
+`;
 
 export const ServiceIcon = styled.img``;
