@@ -43,4 +43,6 @@ export const IMAGES = {
   SERVICE_INFO_7_1: "./images/services/7.1.png",
   SERVICE_INFO_7_2: "./images/services/7.2.jpeg",
   SERVICE_INFO_8: "./images/services/8.jpeg",
+
+  ABOUT_US_AVATAR: "./images/about/avatar.jpeg",
 };

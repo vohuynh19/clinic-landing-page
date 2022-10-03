@@ -10,7 +10,28 @@ import "antd/dist/antd.css";
 import type { AppProps } from "next/app";
 import { AppLayout } from "@layouts";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faScroll,
+  faMedal,
+  faTeeth,
+  faTooth,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
+
+library.add(faScroll, faMedal, faTeeth, faTooth, faStar);
+
 function MyApp({ Component, pageProps }: AppProps) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  if (!isLoaded) {
+    return <></>;
+  }
   return (
     <>
       <Head>

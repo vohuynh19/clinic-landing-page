@@ -27,7 +27,9 @@ const OurServicesSection = () => {
           equipment and technology available. Come get your dental needs taken
           care of by our gentle dentist and hygienist.
         </Desc>
-        <Button>learn more</Button>
+        <Link href={"./services"}>
+          <Button>learn more</Button>
+        </Link>
       </Info>
 
       <Detail>

@@ -1,4 +1,5 @@
 import { Button } from "@components";
+import Link from "next/link";
 import { ButtonWrapper, Container, Title, Wrapper } from "./styled";
 
 const FooterContactSection = () => {
@@ -11,7 +12,9 @@ const FooterContactSection = () => {
         </Title>
 
         <ButtonWrapper>
-          <Button>contact us</Button>
+          <Link href="./contact">
+            <Button>contact us</Button>
+          </Link>
         </ButtonWrapper>
       </Container>
     </Wrapper>
