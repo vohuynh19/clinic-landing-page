@@ -7,6 +7,14 @@ import Head from "next/head";
 import "swiper/css/bundle";
 import "antd/dist/antd.css";
 
+import "../styles/bootstrap.min.css";
+import "../styles/animate.css";
+import "../styles/meanmenu.css";
+import "../styles/boxicons.min.css";
+import "../styles/flaticon.css";
+import "../styles/style.css";
+import "../styles/responsive.css";
+
 import type { AppProps } from "next/app";
 import { AppLayout } from "@layouts";
 

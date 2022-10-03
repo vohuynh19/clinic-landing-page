@@ -1,4 +1,8 @@
-import { BookAppointmentSection, FooterContactSection } from "@components";
+import {
+  BookAppointmentSection,
+  FooterContactSection,
+  NewsSection,
+} from "@components";
 import {
   AboutUsSection,
   CarouselSection,
@@ -15,6 +19,7 @@ const Home = () => {
       <OurServicesSection />
       <CarouselSection />
       <MissionSection />
+      <NewsSection />
       <BookAppointmentSection />
       <FooterContactSection />
     </>
