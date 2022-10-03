@@ -45,4 +45,9 @@ export const IMAGES = {
   SERVICE_INFO_8: "./images/services/8.jpeg",
 
   ABOUT_US_AVATAR: "./images/about/avatar.jpeg",
+  ABOUT_US_1: "./images/about/1.png",
+  ABOUT_US_2: "./images/about/2.jpeg",
+  ABOUT_US_3: "./images/about/3.jpeg",
+  ABOUT_US_4: "./images/about/4.jpeg",
+  ABOUT_US_5: "./images/about/5.jpeg",
 };

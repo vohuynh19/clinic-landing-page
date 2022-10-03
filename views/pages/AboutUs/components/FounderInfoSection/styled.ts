@@ -34,12 +34,15 @@ export const Wrapper = styled.section`
 `;
 
 export const Avatar = styled.img`
-  width: 60%;
+  width: 35%;
+
   height: fit-content;
   box-sizing: border-box;
   padding: 0 24px;
 
   @media (max-width: 1024px) {
+    width: 60%;
+
     min-width: 300px;
     margin-bottom: 16px;
     padding: 0 12px;
@@ -55,6 +58,10 @@ export const Profile = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 80px 24px;
   }
 `;
 export const AwardsWrapper = styled.div`
@@ -79,6 +86,9 @@ export const AwardItem = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
+  }
+  @media (max-width: 768px) {
+    padding: 16px 0;
   }
 `;
 export const Info = styled.div`
