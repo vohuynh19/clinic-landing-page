@@ -62,6 +62,7 @@ const Sider: ForwardRefRenderFunction<SiderHandle, {}> = ({}, ref) => {
           <LinkItem title="Home" activeKey="/" />
           <LinkItem title="Services" activeKey="/services" />
           <LinkItem title="About" activeKey="/about-us" />
+          <LinkItem title="Blogs" activeKey="/blogs" />
           <LinkItem title="Contact" activeKey="/contact" />
         </Body>
       </Wrapper>
