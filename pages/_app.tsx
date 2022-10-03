@@ -17,10 +17,12 @@ import {
   faTeeth,
   faTooth,
   faStar,
+  faEnvelope,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 
-library.add(faScroll, faMedal, faTeeth, faTooth, faStar);
+library.add(faScroll, faMedal, faTeeth, faTooth, faStar, faEnvelope, faPhone);
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [isLoaded, setIsLoaded] = useState(false);
