@@ -26,12 +26,16 @@ export const Container = styled.div`
 export const LeftQuoteWrapper = styled.div`
   flex: 1;
   padding-right: 80px;
+
+  @media (max-width: 1024px) {
+    padding-right: 0;
+  }
 `;
 export const LeftQuote = styled.div`
   font-size: 350px;
   height: 200px;
   position: relative;
-  top: -140px;
+  top: -200px;
   left: 10px;
   color: ${({ theme }) => theme.colors.highlightPrimary};
   margin-right: 16px;
@@ -123,6 +127,7 @@ export const Content = styled.div`
 export const Title = styled.div`
   font-size: 40px;
   color: ${({ theme }) => theme.colors.highlightWhite};
+  line-height: 52px;
 
   position: relative;
   top: -60px;

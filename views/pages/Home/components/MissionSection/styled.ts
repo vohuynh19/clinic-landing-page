@@ -26,7 +26,7 @@ export const LeftQuote = styled.div`
   font-size: 350px;
   height: 200px;
   position: relative;
-  top: -140px;
+  top: -200px;
   left: 10px;
   color: ${({ theme }) => theme.colors.lightYellow};
   margin-right: 16px;

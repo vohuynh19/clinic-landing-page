@@ -52,14 +52,9 @@ export const LinkItem: FC<LinkItemProps> = ({ title, activeKey }) => {
   const router = useRouter();
 
   return (
-    <Link href={activeKey}>
-      <LinkItemWrapper
-        href={activeKey}
-        isActive={activeKey === router.pathname}
-      >
-        {title}
-      </LinkItemWrapper>
-    </Link>
+    <LinkItemWrapper href={activeKey} isActive={activeKey === router.pathname}>
+      {title}
+    </LinkItemWrapper>
   );
 };
 
