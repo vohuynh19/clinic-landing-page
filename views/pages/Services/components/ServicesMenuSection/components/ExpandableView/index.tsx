@@ -43,14 +43,14 @@ const ExpandableView: FC<ExpandableViewProps> = (props) => {
   useEffect(() => {
     if (height > 0) {
       if (visibility) {
-        contentRef.current.classList.add("expand");
+        contentRef.current.classList.add("custom-expand");
         setTimeout(() => {
-          contentRef.current.classList.remove("expand");
+          contentRef.current.classList.remove("custom-expand");
         }, 300);
       } else {
-        contentRef.current.classList.add("collapse");
+        contentRef.current.classList.add("custom-collapse");
         setTimeout(() => {
-          contentRef.current.classList.remove("collapse");
+          contentRef.current.classList.remove("custom-collapse");
         }, 300);
       }
     }

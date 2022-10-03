@@ -46,7 +46,7 @@ type ContentProps = {
 
 const Expand = (props: any) => keyframes`
     0% {
-      height: 0;  
+      height: 0px;  
     }
     100% {
       height:  ${props.height}px;
@@ -58,7 +58,7 @@ const Collapse = (props: any) => keyframes`
       height: ${props.height}px;
     }
     100% {
-      height: 0;
+      height: 0px;
     }
 `;
 
@@ -83,11 +83,11 @@ export const Content = styled.div<ContentProps>`
       height: 100%;
     `}
 
-  &.expand {
+  &.custom-expand {
     animation: ${Expand} 300ms;
   }
 
-  &.collapse {
+  &.custom-collapse {
     animation: ${Collapse} 300ms;
   }
 
