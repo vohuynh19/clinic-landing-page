@@ -8,7 +8,7 @@ export const Overlay = styled.div`
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
   visibility: hidden;
-  z-index: 100;
+  z-index: 10000;
 
   &.slide-in {
     animation: custom-ease-in 300ms;
@@ -53,7 +53,7 @@ export const Wrapper = styled.aside`
   bottom: 0;
   width: 300px;
   background-color: ${({ theme }) => theme.colors.primary};
-  z-index: 100;
+  z-index: 10000;
   transform: translateX(300px);
 
   &.slide-in {

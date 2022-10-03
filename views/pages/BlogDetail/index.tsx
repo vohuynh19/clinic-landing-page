@@ -5,7 +5,7 @@ import BlogSidebar from "../Blog/BlogSidebar";
 const BlogDetail = () => {
   return (
     <>
-      <div style={{ marginTop: "40px" }} />
+      <div style={{ marginTop: "60px" }} />
       <div className="blog-details-area ptb-100">
         <div className="container">
           <div className="row">

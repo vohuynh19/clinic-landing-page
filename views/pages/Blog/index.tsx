@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import BlogSidebar from "./BlogSidebar";
-// import BlogSidebar from "../components/Blog/BlogSidebar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BlogLeftSidebar = () => {
   return (
     <>
-      <div style={{ marginTop: "40px" }} />
+      <div style={{ marginTop: "60px" }} />
       <div className="blog-details-area ptb-100">
         <div className="container">
           <div className="row">
@@ -306,7 +306,12 @@ const BlogLeftSidebar = () => {
                         <ul className="pagination">
                           <li className="page-item">
                             <a className="page-link page-links" href="#">
-                              <i className="bx bx-chevrons-left"></i>
+                              <FontAwesomeIcon
+                                icon={{
+                                  prefix: "fas",
+                                  iconName: "arrow-left",
+                                }}
+                              />
                             </a>
                           </li>
                           <li className="page-item active">
@@ -326,7 +331,12 @@ const BlogLeftSidebar = () => {
                           </li>
                           <li className="page-item">
                             <a className="page-link" href="#">
-                              <i className="bx bx-chevrons-right"></i>
+                              <FontAwesomeIcon
+                                icon={{
+                                  prefix: "fas",
+                                  iconName: "arrow-right",
+                                }}
+                              />
                             </a>
                           </li>
                         </ul>

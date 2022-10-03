@@ -72,6 +72,6 @@ export const WaterMarkText = styled.div`
     margin-left: 6px;
     color: #2b2b2b;
     display: inline;
-    color: ${({ theme }) => theme.colors.highlightWhite};
+    color: ${({ theme }) => theme.colors.highlightWhite} !important;
   }
 `;
