@@ -40,6 +40,10 @@ export const AddressContent = styled.div`
   svg {
     color: ${({ theme }) => theme.colors.primary};
     margin-right: 8px;
+    overflow: visible;
+    box-sizing: content-box;
+    height: 1em;
+    vertical-align: -0.125em;
   }
 
   @media (max-width: 1024px) {

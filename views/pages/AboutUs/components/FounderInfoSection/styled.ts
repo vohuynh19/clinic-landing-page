@@ -76,6 +76,10 @@ export const AwardItem = styled.div`
   align-items: center;
 
   svg {
+    overflow: visible;
+    box-sizing: content-box;
+    height: 1em;
+    vertical-align: -0.125em;
     font-size: 32px;
     color: ${({ theme }) => theme.colors.highlightWhite};
   }

@@ -15,7 +15,7 @@ export async function getStaticProps({ locale }: any) {
 const Contact: NextPage = () => {
   return (
     <>
-      <NextSeo title="Contact - The toothbar dental" />
+      <NextSeo title="Blogs - The toothbar dental" />
       <BlogPage />
     </>
   );
