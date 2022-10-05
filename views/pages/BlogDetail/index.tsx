@@ -11,7 +11,12 @@ const BlogDetail = () => {
           <div className="row">
             <div className="col-lg-8 col-md-12">
               <div className="blog-details-desc">
-                <div className="article-image">
+                <div
+                  className="article-image"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
                   <img
                     src="/images/blog-details/blog-details.jpg"
                     alt="image"
@@ -19,7 +24,12 @@ const BlogDetail = () => {
                 </div>
 
                 <div className="article-content">
-                  <div className="entry-meta">
+                  <div
+                    className="entry-meta"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     <ul>
                       <li>
                         <span>Posted On:</span> <a href="#">May 19, 2020</a>
@@ -30,16 +40,30 @@ const BlogDetail = () => {
                     </ul>
                   </div>
 
-                  <h3>What Can I Do To Prevent Myself & prevent Disease</h3>
+                  <h3
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
+                    What Can I Do To Prevent Myself & prevent Disease
+                  </h3>
 
-                  <p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     Quuntur magni dolores eos qui ratione voluptatem sequi
                     nesciunt. Neque porro quia non numquam eius modi tempora
                     incidunt ut labore et dolore magnam dolor sit, consectetur
                     qui ratione voluptatem sequi nesciunt.
                   </p>
 
-                  <p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -50,7 +74,12 @@ const BlogDetail = () => {
                     consectetur adipisicing elit.
                   </p>
 
-                  <blockquote className="flaticon-quote">
+                  <blockquote
+                    className="flaticon-quote"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Repellendus aliquid praesentium eveniet illum asperiores,
@@ -60,7 +89,11 @@ const BlogDetail = () => {
                     </p>
                   </blockquote>
 
-                  <p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -77,7 +110,11 @@ const BlogDetail = () => {
                     consectetur adipisicing.
                   </p>
 
-                  <p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -88,7 +125,12 @@ const BlogDetail = () => {
                     commodo laboris nisi.
                   </p>
 
-                  <div className="row mb-3">
+                  <div
+                    className="row mb-3"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     <div className="col-lg-4 mt-4">
                       <div className="b-d-s-img">
                         <img src="/images/blog/blog4.jpg" alt="Image" />
@@ -106,7 +148,11 @@ const BlogDetail = () => {
                     </div>
                   </div>
 
-                  <p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -115,7 +161,11 @@ const BlogDetail = () => {
                     numquam. consectetur adipisicing elit, sed
                   </p>
 
-                  <p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -125,7 +175,12 @@ const BlogDetail = () => {
                   </p>
                 </div>
 
-                <div className="post-navigation">
+                <div
+                  className="post-navigation"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
                   <div className="navigation-links">
                     <div className="nav-previous">
                       <a href="#">
@@ -142,13 +197,25 @@ const BlogDetail = () => {
                 </div>
 
                 <div className="comments-area">
-                  <h3 className="comments-title">2 Comments:</h3>
+                  <h3
+                    className="comments-title"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
+                    2 Comments:
+                  </h3>
 
                   <ol className="comment-list">
                     <li className="comment">
                       <div className="comment-body">
                         <footer className="comment-meta">
-                          <div className="comment-author vcard">
+                          <div
+                            className="comment-author vcard"
+                            data-aos="fade-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                          >
                             <img
                               src="/images/blog-details/comment-img-1.jpg"
                               className="avatar"
@@ -165,7 +232,12 @@ const BlogDetail = () => {
                           </div>
                         </footer>
 
-                        <div className="comment-content">
+                        <div
+                          className="comment-content"
+                          data-aos="fade-up"
+                          data-aos-easing="linear"
+                          data-aos-duration="1500"
+                        >
                           <p>
                             Lorem Ipsum has been the industry’s standard dummy
                             text ever since the 1500s, when an unknown printer
@@ -185,7 +257,12 @@ const BlogDetail = () => {
                         <li className="comment">
                           <div className="comment-body">
                             <footer className="comment-meta">
-                              <div className="comment-author vcard">
+                              <div
+                                className="comment-author vcard"
+                                data-aos="fade-up"
+                                data-aos-easing="linear"
+                                data-aos-duration="1500"
+                              >
                                 <img
                                   src="/images/blog-details/comment-img-2.jpg"
                                   className="avatar"
@@ -195,14 +272,24 @@ const BlogDetail = () => {
                                 <span className="says">says:</span>
                               </div>
 
-                              <div className="comment-metadata">
+                              <div
+                                className="comment-metadata"
+                                data-aos="fade-up"
+                                data-aos-easing="linear"
+                                data-aos-duration="1500"
+                              >
                                 <a href="#">
                                   <span>April 24, 2020 at 10:59 am</span>
                                 </a>
                               </div>
                             </footer>
 
-                            <div className="comment-content">
+                            <div
+                              className="comment-content"
+                              data-aos="fade-up"
+                              data-aos-easing="linear"
+                              data-aos-duration="1500"
+                            >
                               <p>
                                 Sed ut perspiciatis unde omnis iste natus error
                                 sit voluptatem accusantium doloremque
@@ -212,7 +299,12 @@ const BlogDetail = () => {
                               </p>
                             </div>
 
-                            <div className="reply">
+                            <div
+                              className="reply"
+                              data-aos="fade-up"
+                              data-aos-easing="linear"
+                              data-aos-duration="1500"
+                            >
                               <Link href="#">
                                 <a className="comment-reply-link">Reply</a>
                               </Link>
@@ -225,7 +317,12 @@ const BlogDetail = () => {
                     <li className="comment">
                       <div className="comment-body">
                         <footer className="comment-meta">
-                          <div className="comment-author vcard">
+                          <div
+                            className="comment-author vcard"
+                            data-aos="fade-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                          >
                             <img
                               src="/images/blog-details/comment-img-3.jpg"
                               className="avatar"
@@ -235,14 +332,24 @@ const BlogDetail = () => {
                             <span className="says">says:</span>
                           </div>
 
-                          <div className="comment-metadata">
+                          <div
+                            className="comment-metadata"
+                            data-aos="fade-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                          >
                             <a href="#">
                               <span>April 24, 2020 at 10:59 am</span>
                             </a>
                           </div>
                         </footer>
 
-                        <div className="comment-content">
+                        <div
+                          className="comment-content"
+                          data-aos="fade-up"
+                          data-aos-easing="linear"
+                          data-aos-duration="1500"
+                        >
                           <p>
                             Lorem Ipsum has been the industry’s standard dummy
                             text ever since the 1500s, when an unknown printer
@@ -251,7 +358,12 @@ const BlogDetail = () => {
                           </p>
                         </div>
 
-                        <div className="reply">
+                        <div
+                          className="reply"
+                          data-aos="fade-up"
+                          data-aos-easing="linear"
+                          data-aos-duration="1500"
+                        >
                           <Link href="#">
                             <a className="comment-reply-link">Reply</a>
                           </Link>
@@ -261,17 +373,34 @@ const BlogDetail = () => {
                   </ol>
 
                   <div className="comment-respond">
-                    <h3 className="comment-reply-title">Leave a Reply</h3>
+                    <h3
+                      className="comment-reply-title"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="1500"
+                    >
+                      Leave a Reply
+                    </h3>
 
                     <form className="comment-form">
-                      <p className="comment-notes">
+                      <p
+                        className="comment-notes"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
                         <span id="email-notes">
                           Your email address will not be published.
                         </span>
                         Required fields are marked
                         <span className="required">*</span>
                       </p>
-                      <p className="comment-form-author">
+                      <p
+                        className="comment-form-author"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
                         <label>
                           Name <span className="required">*</span>
                         </label>
@@ -282,7 +411,12 @@ const BlogDetail = () => {
                           required={true}
                         />
                       </p>
-                      <p className="comment-form-email">
+                      <p
+                        className="comment-form-email"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
                         <label>
                           Email <span className="required">*</span>
                         </label>
@@ -293,11 +427,21 @@ const BlogDetail = () => {
                           required={true}
                         />
                       </p>
-                      <p className="comment-form-url">
+                      <p
+                        className="comment-form-url"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
                         <label>Website</label>
                         <input type="url" id="url" name="url" />
                       </p>
-                      <p className="comment-form-comment">
+                      <p
+                        className="comment-form-comment"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
                         <label>Comment</label>
                         <textarea
                           name="comment"
@@ -307,7 +451,12 @@ const BlogDetail = () => {
                           required={true}
                         ></textarea>
                       </p>
-                      <p className="form-submit">
+                      <p
+                        className="form-submit"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
                         <input
                           type="submit"
                           name="submit"
