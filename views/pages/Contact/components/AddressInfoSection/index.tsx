@@ -18,19 +18,21 @@ const AddressInfoSection = () => {
         <AddressWrapper>
           <AddressContent>
             <HighlightLine primary />
-            <Title className="highlightFont">We can't wait to meet you!</Title>
-            <p>
+            <Title data-aos="fade-up" className="highlightFont">
+              We can't wait to meet you!
+            </Title>
+            <p data-aos="fade-up">
               Gentle, caring and experienced dentist conveniently located on
               River Valley Road.
             </p>
-            <p>
+            <p data-aos="fade-up">
               <b>Location</b>
               <br />
               428 River Valley Road #01-07
               <br />
               Loft @ Nathan, Singapore 248327
             </p>
-            <p>
+            <p data-aos="fade-up">
               <b>Office hours</b>
               <br />
               Monday to Friday 9am - 6pm
@@ -40,7 +42,7 @@ const AddressInfoSection = () => {
               Closed on Sundays and Public Holidays
             </p>
 
-            <p>
+            <p data-aos="fade-up">
               <FontAwesomeIcon icon={{ prefix: "fas", iconName: "envelope" }} />
 
               <b>hello@thetoothbardental.com.sg</b>
@@ -66,13 +68,14 @@ const AddressInfoSection = () => {
               aria-hidden="false"
               tabIndex={0}
               id="map-detail"
+              data-aos="fade-left"
             />
           </AddressMap>
         </AddressWrapper>
 
         <AddressNote>
-          <p>Where to park:</p>
-          <p>
+          <p data-aos="fade-up">Where to park:</p>
+          <p data-aos="fade-up">
             1) Car parking is available within Loft@Nathan and is accessible via
             31 Nathan Road. The basement mechanical car park is open to the
             public between 10am to 10pm. Please approach the attendant if you
@@ -81,12 +84,12 @@ const AddressInfoSection = () => {
             Parking Rates: $1.50 per hour, fully electronic payment.
           </p>
 
-          <p>
+          <p data-aos="fade-up">
             2) Alternatively, you may wish to park at Valley Point Shopping
             Centre opposite the clinic. Parking is readily available and we are
             just a 5 minute walk away.
           </p>
-          <p>
+          <p data-aos="fade-up">
             3) 464 River Valley Road Singapore 248349
             <br />
             (Open carpark, front &amp; back of building 24 hrs)

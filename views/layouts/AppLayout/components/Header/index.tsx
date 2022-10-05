@@ -22,16 +22,16 @@ const Header: FC<HeaderProps> = ({ siderRef }) => {
   return (
     <Wrapper>
       <Container>
-        <LeftMenu>
+        <LeftMenu data-aos="fade-down">
           <LinkItem title="Home" activeKey="/" />
           <LinkItem title="Services" activeKey="/services" />
         </LeftMenu>
 
-        <LogoWrapper>
+        <LogoWrapper data-aos="zoom-in">
           <Logo src={IMAGES.APP_HEADER_LOGO} />
         </LogoWrapper>
 
-        <RightMenu>
+        <RightMenu data-aos="fade-down">
           <LinkItem title="About" activeKey="/about-us" />
           <LinkItem title="Blogs" activeKey="/blogs" />
           <LinkItem title="Contact" activeKey="/contact" />

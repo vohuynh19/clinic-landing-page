@@ -13,7 +13,7 @@ const PowerBySection = () => {
   return (
     <Wrapper>
       {IMAGE_ARR.map((item) => (
-        <img src={item} />
+        <img data-aos="fade-right" src={item} />
       ))}
     </Wrapper>
   );

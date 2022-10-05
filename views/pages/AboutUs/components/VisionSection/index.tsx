@@ -11,7 +11,7 @@ import {
 const VisionSection = () => {
   return (
     <Wrapper>
-      <Container>
+      <Container data-aos="fade-up">
         <LeftQuoteWrapper>
           <LeftQuote className="highlightFont">“</LeftQuote>
         </LeftQuoteWrapper>

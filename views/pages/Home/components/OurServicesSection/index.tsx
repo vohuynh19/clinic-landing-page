@@ -18,7 +18,7 @@ import {
 const OurServicesSection = () => {
   return (
     <Wrapper>
-      <Info>
+      <Info data-aos="fade-left">
         <HighlightLine primary />
         <Title className="highlightFont">Our services</Title>
         <Desc>
@@ -35,7 +35,7 @@ const OurServicesSection = () => {
       <Detail>
         {services.map((item, index) => (
           <Link href={`/services#services-${index + 1}`}>
-            <ItemWrapper>
+            <ItemWrapper data-aos="fade-down">
               <ItemIcon src={item.icon} />
               <ItemInfo>
                 <ItemTitle>{item.title}</ItemTitle>

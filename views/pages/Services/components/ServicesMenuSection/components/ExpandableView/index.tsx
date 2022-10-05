@@ -57,7 +57,12 @@ const ExpandableView: FC<ExpandableViewProps> = (props) => {
   }, [height, visibility]);
 
   return (
-    <Wrapper id={"key-" + props.idKey}>
+    <Wrapper
+      id={"key-" + props.idKey}
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <Button onClick={() => setVisibility(!visibility)}>
         <Title className="highlightFont">{props.title}</Title>
         <StatusIcon visibility={visibility}>

@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <>
       <Wrapper>
-        <Container>
+        <Container data-aos="fade-left">
           <Col>
             <HighlightLine />
             <FooterTitle className="highlightFont">Come say hi!</FooterTitle>
@@ -55,7 +55,7 @@ const Footer = () => {
       </Wrapper>
 
       <WaterMarkWrapper>
-        <WaterMarkText>
+        <WaterMarkText data-aos="fade-up">
           © 2022 The Toothbar Dental Pte Ltd, All Rights Reserved | Designed by
           <a>digitalts</a>
         </WaterMarkText>

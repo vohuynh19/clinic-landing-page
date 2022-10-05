@@ -7,7 +7,7 @@ const NewsStyleOne = () => {
   return (
     <div className="blog-area pt-100 pb-70">
       <div className="container">
-        <div className="section-title">
+        <div className="section-title" data-aos="fade-down">
           <div
             style={{
               display: "flex",
@@ -38,7 +38,7 @@ const NewsStyleOne = () => {
           </p>
         </div>
 
-        <div className="row justify-content-center">
+        <div className="row justify-content-center" data-aos="fade-down">
           <div className="col-lg-4 col-md-6">
             <div className="single-blog">
               <Link href="/blog-details">

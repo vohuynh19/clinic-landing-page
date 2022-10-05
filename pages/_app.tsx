@@ -1,5 +1,6 @@
 import { appWithTranslation } from "next-i18next";
 import { ThemeProvider } from "styled-components";
+import AOS from "aos";
 
 import { GlobalStyled, themes } from "../theme";
 import Head from "next/head";
@@ -14,6 +15,7 @@ import "../styles/boxicons.min.css";
 import "../styles/flaticon.css";
 import "../styles/style.css";
 import "../styles/responsive.css";
+import "aos/dist/aos.css";
 
 import type { AppProps } from "next/app";
 import { AppLayout } from "@layouts";
@@ -48,6 +50,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 1000,
+    });
+
     setIsLoaded(true);
   }, []);
 

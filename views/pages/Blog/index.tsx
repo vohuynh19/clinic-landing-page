@@ -14,7 +14,7 @@ const BlogLeftSidebar = () => {
               <div className="blog-details-desc">
                 <div className="row">
                   <div className="col-lg-6 col-md-6">
-                    <div className="single-blog">
+                    <div className="single-blog" data-aos="fade-up">
                       <Link href="/blog-details">
                         <a>
                           <img src="/images/blog/blog2.jpg" alt="Image" />
@@ -47,7 +47,7 @@ const BlogLeftSidebar = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-6">
-                    <div className="single-blog">
+                    <div className="single-blog" data-aos="fade-up">
                       <Link href="/blog-details">
                         <a>
                           <img src="/images/blog/blog3.jpg" alt="Image" />
@@ -79,7 +79,7 @@ const BlogLeftSidebar = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-6">
-                    <div className="single-blog">
+                    <div className="single-blog" data-aos="fade-up">
                       <Link href="/blog-details">
                         <a>
                           <img src="/images/blog/blog4.jpg" alt="Image" />
@@ -116,7 +116,7 @@ const BlogLeftSidebar = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-6">
-                    <div className="single-blog">
+                    <div className="single-blog" data-aos="fade-up">
                       <Link href="/blog-details">
                         <a>
                           <img src="/images/blog/blog5.jpg" alt="Image" />
@@ -153,7 +153,7 @@ const BlogLeftSidebar = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-6">
-                    <div className="single-blog">
+                    <div className="single-blog" data-aos="fade-up">
                       <Link href="/blog-details">
                         <a>
                           <img src="/images/blog/blog6.jpg" alt="Image" />
@@ -190,7 +190,7 @@ const BlogLeftSidebar = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-6">
-                    <div className="single-blog">
+                    <div className="single-blog" data-aos="fade-up">
                       <Link href="/blog-details">
                         <a>
                           <img src="/images/blog/blog7.jpg" alt="Image" />
@@ -227,7 +227,7 @@ const BlogLeftSidebar = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-6">
-                    <div className="single-blog">
+                    <div className="single-blog" data-aos="fade-up">
                       <Link href="/blog-details">
                         <a>
                           <img src="/images/blog/blog8.jpg" alt="Image" />
@@ -264,7 +264,7 @@ const BlogLeftSidebar = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-6">
-                    <div className="single-blog">
+                    <div className="single-blog" data-aos="fade-up">
                       <Link href="/blog-details">
                         <a>
                           <img src="/images/blog/blog9.jpg" alt="Image" />
@@ -303,7 +303,7 @@ const BlogLeftSidebar = () => {
                   <div className="col-lg-12">
                     <div className="page-navigation-area">
                       <nav aria-label="Page navigation example text-center">
-                        <ul className="pagination">
+                        <ul className="pagination" data-aos="fade-up">
                           <li className="page-item">
                             <a className="page-link page-links" href="#">
                               <FontAwesomeIcon

@@ -3,7 +3,7 @@ import React from "react";
 const BlogSidebar = () => {
   return (
     <div className="widget-area" id="secondary">
-      <div className="widget widget_search">
+      <div className="widget widget_search" data-aos="fade-down">
         <h3 className="widget-title">Search Now</h3>
         <div className="post-wrap">
           <form className="search-form">
@@ -22,7 +22,7 @@ const BlogSidebar = () => {
         </div>
       </div>
 
-      <div className="widget widget_categories">
+      <div className="widget widget_categories" data-aos="fade-down">
         <h3 className="widget-title">Categories</h3>
         <div className="post-wrap">
           <ul>

@@ -9,7 +9,9 @@ const IntroSection = () => {
     <Wrapper>
       <BannerImage src={IMAGES.HOME_BANNER} />
       <Container>
-        <TitleText>Beautiful smiles created every moment</TitleText>
+        <TitleText data-aos="fade-right">
+          Beautiful smiles created every moment
+        </TitleText>
       </Container>
     </Wrapper>
   );

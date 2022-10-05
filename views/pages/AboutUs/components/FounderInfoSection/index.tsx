@@ -15,31 +15,33 @@ import { IMAGES } from "src/constants/images";
 const FounderInfoSection = () => {
   return (
     <Wrapper>
-      <Avatar src={IMAGES.ABOUT_US_AVATAR} />
+      <Avatar data-aos="fade-right" src={IMAGES.ABOUT_US_AVATAR} />
 
       <Profile>
         <HighlightLine primary />
-        <h1 className="highlightFont">
+        <h1 data-aos="fade-up" className="highlightFont">
           Dr Phang Hui Jing
           <i className="title">BDS Singapore</i>
         </h1>
-        <h4 className="highlightFont">Founder &amp; Clinical Director</h4>
-        <p>
+        <h4 data-aos="fade-up" className="highlightFont">
+          Founder &amp; Clinical Director
+        </h4>
+        <p data-aos="fade-up">
           Dr Phang is a caring dentist who has a friendly and jovial outlook
           that will set you right at ease.
         </p>
-        <p>
+        <p data-aos="fade-up">
           She graduated as Valedictorian from the National University of
           Singapore, awarded with the University Silver Medal, Terrel Silver
           Medal, Tratman Medal and SDA Book Prize, and was placed on the Dean’s
           List.
         </p>
-        <p>
+        <p data-aos="fade-up">
           Dr Phang started her career as a dental surgeon in a public hospital
           treating patients requiring complex multidisciplinary medical and
           dental attention.
         </p>
-        <p>
+        <p data-aos="fade-up">
           After hospital practice, Dr Phang joined a leading family dental care
           practice, with strong emphasis on advanced dental technology and
           aesthetics. She practices with keen interests in all-rounded cosmetic
@@ -49,7 +51,7 @@ const FounderInfoSection = () => {
           and dental splints for managing potential TMJ pain from teeth
           clenching and grinding.
         </p>
-        <p>
+        <p data-aos="fade-up">
           Dr Phang desires to bring out the best available to her patients and
           enjoys being a family dentist treating patients of all ages. It has
           been an enriching journey to see many children grow up with her
@@ -61,11 +63,13 @@ const FounderInfoSection = () => {
         <Spacer />
 
         <HighlightLine primary />
-        <h1 className="highlightFont">Awards</h1>
+        <h1 data-aos="fade-up" className="highlightFont">
+          Awards
+        </h1>
 
         <AwardsWrapper>
           {awards.map((item) => (
-            <AwardItem key={item.info}>
+            <AwardItem data-aos="fade-left" key={item.info}>
               <FontAwesomeIcon icon={item.icon as any} />
 
               <Info>{item.info}</Info>

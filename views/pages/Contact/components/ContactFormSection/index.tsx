@@ -22,7 +22,7 @@ const ContactFormSection = () => {
 
   return (
     <Wrapper>
-      <Container>
+      <Container data-aos="flip-left">
         <LeftQuoteWrapper>
           <LeftQuote className="highlightFont">“</LeftQuote>
           <Title className="highlightFont">Let's get connected</Title>

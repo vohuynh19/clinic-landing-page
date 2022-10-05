@@ -11,7 +11,7 @@ import {
 const MissionSection = () => {
   return (
     <Wrapper>
-      <Container>
+      <Container data-aos="fade-down">
         <LeftQuoteWrapper>
           <LeftQuote className="highlightFont">“</LeftQuote>
         </LeftQuoteWrapper>

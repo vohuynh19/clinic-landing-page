@@ -15,7 +15,7 @@ const images = [
 
 const CarouselSection = () => {
   return (
-    <Wrapper>
+    <Wrapper data-aos="fade-down">
       <Swiper
         navigation={{
           prevEl: ".prev",
